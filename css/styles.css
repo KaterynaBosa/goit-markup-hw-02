@@ -222,7 +222,6 @@ body {
 .row-title {
 }
 .list {
-  list-style: none;
 }
 .card {
   background: var(--color-white);
