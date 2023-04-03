@@ -35,7 +35,7 @@ body {
 .logo {
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1, 16;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -45,7 +45,7 @@ body {
 .dark-logo {
   font-weight: 800;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 1, 16;
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
@@ -57,9 +57,14 @@ body {
 .menu-item {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1, 5;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--color-ocean);
 }
 
 /* contacts  */
@@ -72,19 +77,31 @@ body {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
+
+.mail-item:hover,
+.mail-item:focus {
+  color: var(--color-ocean);
+}
+
 .tel-item {
   letter-spacing: 0.02em;
   color: var(--color-slate);
 }
 
+.tel-item:hover,
+.tel-item:focus {
+  color: var(--color-ocean);
+}
+
 /* main */
 
 .main-section {
+  background: #2e2f42;
 }
 .main-section-title {
   font-weight: 700;
   font-size: 56px;
-  line-height: 60px;
+  line-height: 1, 07;
   letter-spacing: 0.02em;
   color: var(--color-white);
 }
@@ -103,6 +120,7 @@ body {
 .main-section-button:focus {
   background: var(--color-ocean);
   color: var(--color-white);
+  cursor: pointer;
 }
 
 /*  features  */
@@ -119,7 +137,7 @@ body {
 .features-subtitle {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1, 2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   flex: none;
@@ -127,8 +145,6 @@ body {
   flex-grow: 0;
 }
 .features-description {
-  width: 264px;
-  height: 72px;
   color: var(--color-slate);
   flex: none;
   order: 1;
@@ -139,7 +155,7 @@ body {
 .whatwedo-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 1, 1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-navy-blue);
@@ -171,7 +187,7 @@ body {
 .team-name {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1, 2;
   color: var(--color-navy-blue);
   flex: none;
   order: 0;
@@ -197,7 +213,7 @@ body {
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1, 5;
   display: flex;
   align-items: center;
   text-align: center;
@@ -221,7 +237,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1, 2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   flex: none;
