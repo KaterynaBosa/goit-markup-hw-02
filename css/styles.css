@@ -265,7 +265,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-navy-blue);
   flex: none;
@@ -273,6 +273,7 @@ body {
   flex-grow: 0;
 }
 .description {
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
   flex: none;
