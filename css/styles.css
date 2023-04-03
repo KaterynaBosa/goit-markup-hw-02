@@ -33,8 +33,6 @@ body {
 
 /* Heder */
 .logo {
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -42,11 +40,9 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #4d5ae5;
+  color: var(--color-iris);
 }
 .dark-logo {
-  font-family: "Raleway";
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -54,18 +50,16 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 .menu {
 }
 .menu-item {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 
 /* contacts  */
@@ -76,11 +70,11 @@ body {
 
 .mail-item {
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--color-slate);
 }
 .tel-item {
   letter-spacing: 0.02em;
-  color: #434455;
+  color: var(--color-slate);
 }
 
 /* main */
@@ -88,17 +82,29 @@ body {
 .main-section {
 }
 .main-section-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 60px;
-  text-align: center;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--color-white);
 }
 .main-section-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 32px;
+  gap: 10px;
+  background: var(--color-iris);
+  color: var(--color-white);
+  font-family: inherit;
 }
+
+.main-section-button:hover,
+.main-section-button:focus {
+  background: var(--color-ocean);
+  color: var(--color-white);
+}
+
 /*  features  */
 
 .features-section {
@@ -111,23 +117,19 @@ body {
   gap: 8px;
 }
 .features-subtitle {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   flex: none;
   order: 0;
   flex-grow: 0;
-  width: 264px;
-  height: 24px;
 }
 .features-description {
   width: 264px;
   height: 72px;
-  color: #434455;
+  color: var(--color-slate);
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -135,15 +137,12 @@ body {
 /* What are we going */
 
 .whatwedo-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 40px;
-  text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 .whatwedo {
 }
@@ -159,10 +158,8 @@ body {
 .team {
 }
 .team-title {
-  font-family: "Roboto";
-
   text-transform: capitalize;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
 }
 .team-item {
   display: flex;
@@ -172,37 +169,69 @@ body {
   gap: 32px;
 }
 .team-name {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #2e2f42;
+  color: var(--color-navy-blue);
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 .team-position {
-  color: #434455;
+  color: var(--color-slate);
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 .footer-description {
-  color: #f4f4fd;
+  color: var(--color-cloud);
 }
 
 /* portfolio */
 
 .list {
 }
+.card {
+  background: var(--color-white);
+}
 .portfolio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: var(--color-cloud);
+  color: var(--color-iris);
+  font-family: inherit;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
+  background: var(--color-ocean);
+  color: var(--color-white);
+  cursor: pointer;
 }
 
 .subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 .description {
+  letter-spacing: 0.02em;
+  color: var(--color-slate);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
